@@ -38,7 +38,7 @@
       initialPassword = "$123qwerty";
       isNormalUser = true;
       openssh.authorizedKeys.keys = [
-	# TODO : Add public SSH key here
+    	# TODO : Add public SSH key here
       ];
       extraGroups = ["wheel"];
     };
@@ -63,7 +63,7 @@
       enable = true;
       settings = {
         PermitRootLogin = "no";
-	PasswordAuthentication = false;
+	      PasswordAuthentication = false;
       };
     };
    

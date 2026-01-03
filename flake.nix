@@ -16,7 +16,7 @@
     host = "mingodev-laptop";
     username = "mingodev";
     supportedSystems = [
-	"aarch64-linux"
+	    "aarch64-linux"
     ];
     forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
 
@@ -31,7 +31,7 @@
     nixosConfigurations = {
       "mingodev-laptop" = nixpkgs.lib.nixosSystem {
 	
-	specialArgs = {inherit inputs;};
+	    specialArgs = {inherit inputs;};
 
         modules = [
           ./nixos/configuration.nix
