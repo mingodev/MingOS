@@ -22,7 +22,7 @@
 
   in { 
     packages = forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${system}); 
-    formatter = forAllSystems (system: nixpkgs.legacyPkgs.{$system}.alejandra);
+    formatter = forAllSystems (system: "nixpkgs.legacyPkgs.{$system}.alejandra");
     
     overlays = import ./overlays {inherit inputs;};
     nixosModules = import ./modules/nixos;
@@ -44,9 +44,8 @@
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
       extraSpecialArgs = {inherit inputs;};
       modules = [
-        ./home-manager/home.nix;
+        ./home-manager/home.nix
       ];
-    }
+    };
   };
-
 }
