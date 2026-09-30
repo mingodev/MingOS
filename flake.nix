@@ -35,9 +35,9 @@
 	    backupFileExtension = "backup_";
 	    extraSpecialArgs = { inherit inputs; };
 	    
-	    users.mingodev = import ./home-manager/mingodev.nix;
-	    users.mingogamer = import ./home-manager/mingogamer.nix;
-	    users.guest = import ./home-manager/guest.nix;
+	    users.mingodev = import ./home-manager/users/mingodev.nix;
+	    users.mingogamer = import ./home-manager/users/mingogamer.nix;
+	    users.guest = import ./home-manager/users/guest.nix;
 	  };
 	}
       ];
