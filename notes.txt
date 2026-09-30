@@ -1,0 +1,17 @@
+TODO:
+- Division des responsabilites entre Host et Users
+-- Host -> Determine les configurations propres a la machine
+--- Nvidia VS AMD par exemple
+--- Bluetooth or nay par exemple
+--- Configs laptop VS tour
+--- Settings communs a tous les usagers
+-- User -> Determine les configurations propres aux usagers
+--- Packages
+--- Theming
+--- Choix des modules
+--- Devrait utiliser home-manager pour ca idealement
+- Ajout langue FR clavier (dans Hyprland)
+- Ajouter copilot
+- RICE
+- Configurer env de prog
+- User gaming sur SteamOS?
